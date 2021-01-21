@@ -1,34 +1,11 @@
 {
-  "library": [
-    {
-      "id": 1,
-      "name": "Library Name 0",
-      "description": "This is a test description",
-      "library_usage": "This tells you about the usage of the library",
-      "notes": "Notes about the library",
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 2,
-      "name": "Library Name 1",
-      "description": "This is a test description",
-      "library_usage": "This tells you about the usage of the library",
-      "notes": "Notes about the library",
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 3,
-      "name": "Library Name 2",
-      "description": "This is a test description",
-      "library_usage": "This tells you about the usage of the library",
-      "notes": "Notes about the library",
-      "image": "https://via.placeholder.com/150"
-    }
-  ],
   "village": [
     {
       "id": 1,
-      "GPS_coordinates": [2131231.233, 348593845.34234],
+      "GPS_coordinates": [
+        2131231.233,
+        348593845.34234
+      ],
       "images_drive_folder_link": "https://drive.google.com/drive",
       "village_contact_name": "Jon Doe",
       "village_contact_phone": 123456789,
@@ -41,7 +18,10 @@
     },
     {
       "id": 2,
-      "GPS_coordinates": [2131231.233, 348593845.34234],
+      "GPS_coordinates": [
+        2131231.233,
+        348593845.34234
+      ],
       "images_drive_folder_link": "https://drive.google.com/drive",
       "village_contact_name": "Jon Doe",
       "village_contact_phone": 123456789,
@@ -60,6 +40,7 @@
       "lastName": "Southcombe",
       "studentEmail": "gsouthcombe0@bbc.co.uk",
       "primaryLanguage": "Armenian",
+      "time_zone": "America/Havana",
       "dob": "1/25/2020",
       "englishProficiency": 7,
       "schoolLevel": 5,
@@ -74,6 +55,7 @@
       "lastName": "Beyer",
       "studentEmail": "mbeyer1@sun.com",
       "primaryLanguage": "Tok Pisin",
+      "time_zone": "America/Havana",
       "dob": "7/1/2020",
       "englishProficiency": 8,
       "schoolLevel": 1,
@@ -88,6 +70,7 @@
       "lastName": "Koopman",
       "studentEmail": "ukoopman2@shareasale.com",
       "primaryLanguage": "Papiamento",
+      "time_zone": "America/Havana",
       "dob": "1/15/2020",
       "englishProficiency": 6,
       "schoolLevel": 7,
@@ -102,6 +85,7 @@
       "lastName": "Gibbeson",
       "studentEmail": "qgibbeson3@nymag.com",
       "primaryLanguage": "Tsonga",
+      "time_zone": "America/Havana",
       "dob": "10/11/2020",
       "englishProficiency": 7,
       "schoolLevel": 8,
@@ -116,6 +100,7 @@
       "lastName": "Hutley",
       "studentEmail": "lhutley4@usda.gov",
       "primaryLanguage": "Korean",
+      "time_zone": "America/Havana",
       "dob": "10/7/2020",
       "englishProficiency": 8,
       "schoolLevel": 10,
@@ -130,6 +115,7 @@
       "lastName": "Cullington",
       "studentEmail": "mcullington5@xing.com",
       "primaryLanguage": "Sotho",
+      "time_zone": "America/Havana",
       "dob": "7/31/2020",
       "englishProficiency": 11,
       "schoolLevel": 8,
@@ -137,38 +123,6 @@
       "mathLevel": 6,
       "parentName": "Marguerite Cullington",
       "parentEmail": "mcullington5@symantec.com"
-    }
-  ],
-  "schools": [
-    {
-      "schoolId": 0,
-      "count_students_currently_enrolled": 23,
-      "count_teachers": 6,
-      "school_description": "this is a description of the school",
-      "school_needs_description": "This is what the school needs",
-      "school_goals_description": "This is where goals will go",
-      "other_dynamic_questions": [],
-      "notes": "general notes about the school"
-    },
-    {
-      "schoolId": 1,
-      "count_students_currently_enrolled": 52,
-      "count_teachers": 9,
-      "school_description": "this is a description of the school",
-      "school_needs_description": "This is what the school needs",
-      "school_goals_description": "This is where goals will go",
-      "other_dynamic_questions": [],
-      "notes": "general notes about the school"
-    },
-    {
-      "schoolId": 2,
-      "count_students_currently_enrolled": 43,
-      "count_teachers": 8,
-      "school_description": "this is a description of the school",
-      "school_needs_description": "This is what the school needs",
-      "school_goals_description": "This is where goals will go",
-      "other_dynamic_questions": [],
-      "notes": "general notes about the school"
     }
   ],
   "headmaster": [
@@ -283,11 +237,114 @@
       "optional_tests": []
     }
   ],
+  "teacher": [
+    {
+      "firstName": "Tom",
+      "lastName": "Joe",
+      "email": "mbeyer1@sun.com",
+      "phone": "123456789",
+      "highestDergee": "doctorate",
+      "subjects": "Science",
+      "classroooms": "classroomA"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Joe",
+      "email": "mbeyer1@sun.com",
+      "phone": "123456789",
+      "highestDergee": "doctorate",
+      "subjects": "Science",
+      "classroooms": "classroomA"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Joe",
+      "email": "mbeyer1@sun.com",
+      "phone": "123456789",
+      "highestDergee": "doctorate",
+      "subjects": "Science",
+      "classroooms": "classroomA"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Joe",
+      "email": "mbeyer1@sun.com",
+      "phone": "123456789",
+      "highestDergee": "doctorate",
+      "subjects": "Science",
+      "classroooms": "classroomA"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Joe",
+      "email": "mbeyer1@sun.com",
+      "phone": "123456789",
+      "highestDergee": "doctorate",
+      "subjects": "Science",
+      "classroooms": "classroomA"
+    }
+  ],
   "auth": [
     {
       "id": 0,
       "username": "test",
       "password": "test"
+    }
+  ],
+  "mentor": [
+    {
+      "id": 1,
+      "firstName": "Giovanna",
+      "lastName": "Southcombe",
+      "email": "gsouthcombe0@bbc.co.uk",
+      "primaryLanguage": "Armenian",
+      "dob": "1/25/2020",
+      "time_zone": "America/Havana"
+    },
+    {
+      "id": 2,
+      "firstName": "Margaux",
+      "lastName": "Beyer",
+      "email": "mbeyer1@sun.com",
+      "primaryLanguage": "Tok Pisin",
+      "dob": "7/1/2020",
+      "time_zone": "America/Havana"
+    },
+    {
+      "id": 3,
+      "firstName": "Ulick",
+      "lastName": "Koopman",
+      "email": "ukoopman2@shareasale.com",
+      "primaryLanguage": "Papiamento",
+      "dob": "1/15/2020",
+      "time_zone": "America/Havana"
+    },
+    {
+      "id": 4,
+      "firstName": "Quinn",
+      "lastName": "Gibbeson",
+      "email": "qgibbeson3@nymag.com",
+      "primaryLanguage": "Tsonga",
+      "dob": "10/11/2020",
+      "time_zone": "America/Havana"
+    },
+    {
+      "id": 5,
+      "firstName": "Lenora",
+      "lastName": "Hutley",
+      "email": "lhutley4@usda.gov",
+      "primaryLanguage": "Korean",
+      "dob": "10/7/2020",
+      "time_zone": "America/Havana"
+    },
+    {
+      "id": 6,
+      "firstName": "Marguerite",
+      "lastName": "Cullington",
+      "email": "mcullington5@xing.com",
+      "primaryLanguage": "Sotho",
+      "dob": "7/31/2020",
+      "time_zone": "America/Havana"
     }
   ]
 }

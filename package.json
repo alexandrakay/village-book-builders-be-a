@@ -4,10 +4,7 @@
   "description": "Mock API Data for Labs 29 VBB",
   "main": "index.js",
   "scripts": {
-    "start": "npm run genData && node server.js",
-    "dev": "npm run genData && nodemon server.js",
-    "genData": "node dataGenerator.js",
-    "oldStart": "json-server-relationship --watch db.json --routes routes.json --port 5000",
+    "start": "json-server-relationship --watch db.json --routes routes.json --port 5000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "forever start server.js"
   },
