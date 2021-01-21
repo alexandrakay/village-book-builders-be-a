@@ -8,4 +8,5 @@
   "/headmaster/schools/:id": "/schools/:id",
   "/headmaster/mentees/:id": "/students/:id",
   "/headmaster/mentees/": "/students"
+
 }
