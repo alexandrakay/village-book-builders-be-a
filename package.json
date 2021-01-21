@@ -4,7 +4,7 @@
   "description": "Mock API Data for Labs 29 VBB",
   "main": "index.js",
   "scripts": {
-    "start": "json-server-relationship --watch db.json --routes routes.json --port 5000",
+    "start": "json-server-relationship --watch db.json  --port 5000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "forever start server.js"
   },
