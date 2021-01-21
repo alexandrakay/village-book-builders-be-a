@@ -10,3 +10,5 @@
   http://localhost:3000/teacher
   http://localhost:3000/auth
   http://localhost:3000/mentor
+
+  use npm start to run on localhost
