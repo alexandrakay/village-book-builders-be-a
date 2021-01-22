@@ -9,16 +9,11 @@ data = {};
 const NUMOFLIBS = 10;
 const NUMOFHEADS = NUMOFLIBS * 2;
 let NUMOFMENTEES = 0;
+const NUMOFTEACHERS = NUMOFLIBS * 2;
+const NUMOFMENTORS = NUMOFLIBS * 2;
+
 const genders = ["Male", "Female", "Other"];
-const apps = [
-  "phone",
-  "email",
-  "mail",
-  "wechat",
-  "duo",
-  "facebook",
-  "twitter",
-];
+const apps = ["phone", "email", "mail", "wechat", "duo", "facebook", "twitter"];
 
 //Librarys-----------------------------------------------------
 data.library = [];
@@ -64,7 +59,7 @@ for (let index = 0; index < NUMOFLIBS; index++) {
     id: index,
     name: faker.company.companyName(),
     count_menteess_currently_enrolled: faker.random.number(schoolmenteess),
-    count_teachers: faker.random.number(NUMOFHEADS) + 4,
+    count_teachers: 0,
     school_description: faker.random.words(30),
     school_needs: faker.random.words(30),
     school_goals: faker.random.words(30),
@@ -131,11 +126,31 @@ for (let index = 0; index < NUMOFMENTEES; index++) {
       methods: faker.random.arrayElements(apps, 3),
     },
     dynamic_questions: [
-      { qId: 0, question: "My favorite thing to do in my free time is", answer: faker.hacker.phrase() },
-      { qId: 1, question: "When I grow up, I want to be", answer: faker.hacker.phrase() },
-      { qId: 2, question: "Goals & Dreams Notes", answer: faker.hacker.phrase() },
-      { qId: 3, question: "Personal Struggles Notes", answer: faker.hacker.phrase() },
-      { qId: 4, question: "Other interests/hobbies", answer: faker.hacker.phrase() },
+      {
+        qId: 0,
+        question: "My favorite thing to do in my free time is",
+        answer: faker.hacker.phrase(),
+      },
+      {
+        qId: 1,
+        question: "When I grow up, I want to be",
+        answer: faker.hacker.phrase(),
+      },
+      {
+        qId: 2,
+        question: "Goals & Dreams Notes",
+        answer: faker.hacker.phrase(),
+      },
+      {
+        qId: 3,
+        question: "Personal Struggles Notes",
+        answer: faker.hacker.phrase(),
+      },
+      {
+        qId: 4,
+        question: "Other interests/hobbies",
+        answer: faker.hacker.phrase(),
+      },
       { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
       { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
       { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
@@ -144,6 +159,66 @@ for (let index = 0; index < NUMOFMENTEES; index++) {
   };
 
   data.mentee.push(fakeMentees);
+}
+
+//Teachers----
+data.teacher = [];
+for (let index = 0; index < NUMOFTEACHERS; index++) {
+  //Generate data
+  let fakeTeacher = {
+    id: index,
+    first_name: faker.name.firstName(),
+    last_name: faker.name.lastName(),
+    gender: faker.random.arrayElement(genders),
+    address: faker.address.streetAddress(),
+    teachers_picture: faker.image.imageUrl(),
+    education_contact: {
+      name: faker.name.findName(),
+      phone: faker.phone.phoneNumberFormat(2),
+      email: faker.internet.email(),
+      jobTitle: faker.name.jobTitle(),
+    },
+    notes: faker.random.words(20),
+  };
+  data.teacher.push(fakeTeacher);
+}
+
+//mentor
+
+data.mentor = [];
+for (let index = 0; index < NUMOFMENTORS; index++) {
+  //Generate data
+  let fakeMentors = {
+    id: index,
+    first_name: faker.name.firstName(),
+    last_name: faker.name.lastName(),
+    gender: genders[faker.random.number(genders.length - 1)],
+    email: faker.internet.email(),
+    primary_language: faker.random.arrayElement(LANGUAGES).name,
+    dob: faker.date.past(15, "1999-07-09"),
+    mentor_picture: faker.image.imageUrl(),
+    academic_description: faker.random.words(30),
+    support_needed: faker.random.words(20),
+    availability: {
+      time_zone: faker.address.timeZone(),
+      as_early_as: faker.fake("{{random.number(24)}}:00"),
+      as_late_as: faker.fake("{{random.number(24)}}:00"),
+      methods: faker.random.arrayElements(apps, 3),
+    },
+  };
+
+  data.mentor.push(fakeMentors);
+}
+
+//program role -------
+data.program = [];
+for (let index = 0; index < NUMOFLIBS; index++) {
+  let fakeProgram = {
+    id: index,
+    name: faker.address.city(),
+    location: faker.address.nearbyGPSCoordinate(),
+  };
+  data.program.push(fakeProgram);
 }
 
 //Releationships-----------------------------------------------------
@@ -165,11 +240,9 @@ for (let index = 0; index < NUMOFLIBS; index++) {
 
 //headmasters
 for (let index = 0; index < NUMOFLIBS; index++) {
-  //headmaster
   data.headmaster[index].villageId = index;
   data.headmaster[index].schoolId = index;
   data.headmaster[index].libraryId = index;
-  //Village - Schools - Librarys
   data.school[index].headmasterId.push(index);
   data.village[index].headmasterId.push(index);
   data.library[index].headmasterId.push(index);
@@ -184,6 +257,11 @@ for (let index = NUMOFLIBS; index < data.headmaster.length; index++) {
   data.school[randomVillage].headmasterId.push(index);
   data.village[randomVillage].headmasterId.push(index);
   data.library[randomVillage].headmasterId.push(index);
+}
+
+//program
+for (let index = 0; index < data.program.length; index++) {
+  data.program[index].libraryId = index;
 }
 
 //Users-----------------------------------------------------
