@@ -6,17 +6,29 @@
 https://vbb-mock-api.herokuapp.com/
 
 ## Routes
-  ##"/api/*": "/$1",
- ##"/admin/library": "/library",
- ##"/admin/library/:id": "/library/:id",
- ## "/headmaster/village": "/village",
- ##"/headmaster/village/:id": "/village/:id",
-##  "/headmaster/schools": "/schools",
-  ##"/headmaster/schools/:id": "/schools/:id",
-  ##"/headmaster/mentee/:id": "/students/:id",
-  ##"/headmaster/mentee/": "/students",
-  ##"/headmaster/mentor/": "/mentors",
-  ##"/teacher" : "/teacher",
+
+"/api/*": "/$1"
+
+"/admin/library": "/library"
+
+ "/admin/library/:id": "/library/:id"
+ 
+  "/headmaster/village": "/village"
+  
+ "/headmaster/village/:id": "/village/:id"
+ 
+"/headmaster/schools": "/schools"
+
+  "/headmaster/schools/:id": "/schools/:id"
+ 
+  "/headmaster/mentee/:id": "/students/:id"
+  
+  "/headmaster/mentee/": "/students"
+  
+  "/headmaster/mentor/": "/mentors"
+  
+  "/teacher" : "/teacher"
+  
   ##"/program" : "/program"
   
   
