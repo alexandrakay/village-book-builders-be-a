@@ -6,9 +6,8 @@
   "/headmaster/village/:id": "/village/:id",
   "/headmaster/schools": "/schools",
   "/headmaster/schools/:id": "/schools/:id",
-  "/headmaster/mentee/:id": "/students/:id",
-  "/headmaster/mentee/": "/students",
-  "/headmaster/mentor/": "/mentors",
+  "/student": "/students",
+  "/mentors": "/mentors",
   "/teacher" : "/teacher",
   "/program" : "/program"
 }
