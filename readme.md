@@ -7,29 +7,25 @@ https://vbb-mock-api.herokuapp.com/
 
 ## Routes
 
-"/api/*": "/$1"
+auth routes:
 
-"/admin/library": "/library"
+https://vbb-mock-api.herokuapp.com/auth/login
+https://vbb-mock-api.herokuapp.com/auth/register
 
- "/admin/library/:id": "/library/:id"
- 
-  "/headmaster/village": "/village"
-  
- "/headmaster/village/:id": "/village/:id"
- 
-"/headmaster/schools": "/schools"
 
-  "/headmaster/schools/:id": "/schools/:id"
- 
-  "/headmaster/mentee/:id": "/students/:id"
-  
-  "/headmaster/mentee/": "/students"
-  
-  "/headmaster/mentor/": "/mentors"
-  
-  "/teacher" : "/teacher"
-  
-  ##"/program" : "/program"
+All basic CRUD operations apply
+
+
+students|mentees -> https://vbb-mock-api.herokuapp.com/mentee
+
+teachers -> https://vbb-mock-api.herokuapp.com/teacher
+
+mentors -> https://vbb-mock-api.herokuapp.com/mentor
+
+headmaster -> https://vbb-mock-api.herokuapp.com/headmaster
+
+programs -> https://vbb-mock-api.herokuapp.com/program
+
   
   
  
