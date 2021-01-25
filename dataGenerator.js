@@ -312,6 +312,25 @@ const fakeUsers = [
     password: "password",
     role: "mentee",
   },
+  {
+    id: 11,
+    email: "teacher@teacher.com",
+    password: "password",
+    role: "teacher",
+  },
+  {
+    id: 12,
+    email: "mentor@mentor.com",
+    password: "password",
+    role: "mentor",
+  },
+  {
+    id: 13,
+    email: "program@program.com",
+    password: "password",
+    role: "program",
+  },
+  
 ];
 data.user = fakeUsers;
 //Debbuging print statements-----------------------------------------------------
