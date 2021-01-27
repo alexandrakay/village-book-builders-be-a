@@ -333,6 +333,21 @@ const fakeUsers = [
   
 ];
 data.user = fakeUsers;
+
+//Resources---------------------------------------------------
+const fakeResource =[
+  { id: 0, name: "google", siteUrl:"https://www.google.com", image_Url: "https://image.pngaaa.com/555/25555-middle.png" },
+  { id: 1, name: "khan academy", siteUrl:"https://www.khanacademy.org/", image_Url: "https://www.cityofhomer-ak.gov/sites/default/files/imageattachments/library/page/66131/khan_academy_kids.png" },
+  { id: 2, name: "notion", siteUrl:"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjGvZ7qrLvuAhWShsAKHXmfBicYABAAGgJpbQ&ae=2&ohost=www.google.com&cid=CAESQOD2jYIu_p5rpABnkkoQDkMGcH8lNOnPkitNBTyb5x8LjzIk5TUumAeXiSrRet5Lqg35a_TN4vrqOk-HQ4EPryA&sig=AOD64_2E6Qu8FAPy8cTN13mJctcYveKYZQ&q&adurl&ved=2ahUKEwj6jZbqrLvuAhUVXc0KHbN3DyIQ0Qx6BAgeEAE", image_Url: "https://cdn.worldvectorlogo.com/logos/notion-2.svg" },
+  { id: 3, name: "britannica", siteUrl:"https://www.britannica.com/", image_Url: "https://www.giraffesocialmedia.co.uk/wp-content/uploads/2018/03/Britannica.jpg" },
+  { id: 4, name: "edutopia", siteUrl:"https://www.edutopia.org/", image_Url: "https://banner2.cleanpng.com/20180529/xfy/kisspng-edutopia-education-school-student-foundation-george-lucas-5b0d17b7b93357.8945893515275846957586.jpg" },
+  { id: 5, name: "discovery education", siteUrl:"https://www.discoveryeducation.com/", image_Url: "https://image.pngaaa.com/555/25555-middle.png" },
+  { id: 6, name: "pbs", siteUrl:"https://www.pbs.org/", image_Url: "https://image.pngaaa.com/555/25555-middle.png" },
+  { id: 7, name: "kahoot", siteUrl:"https://kahoot.com/", image_Url: "https://image.pngaaa.com/555/25555-middle.png" },
+  { id: 8, name: "class dojo", siteUrl: "https://classdojo.com/", image_Url: "https://image.pngaaa.com/555/25555-middle.png" },
+]
+data.resource = fakeResource
+
 //Debbuging print statements-----------------------------------------------------
 // console.log(data.library, "\n\n\n\n\n\n\n\n\n\n\n");
 // console.log(data.village, "\n\n\n\n\n\n\n\n\n\n\n");
