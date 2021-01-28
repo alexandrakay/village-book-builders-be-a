@@ -26,6 +26,9 @@ headmaster -> https://vbb-mock-api.herokuapp.com/headmaster
 
 programs -> https://vbb-mock-api.herokuapp.com/program
 
+resources -> https://vbb-mock-api.herokuapp.com/resource
+
+
   
   
  
