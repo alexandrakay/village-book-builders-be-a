@@ -7,7 +7,7 @@
     "start": "npm run genData && node server.js",
     "dev": "npm run genData && nodemon server.js",
     "genData": "node dataGenerator.js",
-    "oldStart": "json-server-relationship --watch db.json --routes routes.json --port 5000",
+    "oldStart": "json-server-relationship --watch db.json  --port 5000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "forever start server.js"
   },
@@ -16,6 +16,7 @@
   "dependencies": {
     "body-parser": "1.19.0",
     "faker": "5.1.0",
+    "json-server": "^0.16.3",
     "json-server-relationship": "0.14.5",
     "jsonfile": "6.1.0",
     "jsonwebtoken": "8.5.1"
