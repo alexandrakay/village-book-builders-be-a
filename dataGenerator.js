@@ -10,6 +10,7 @@ const NUMOFLIBS = 10;
 const NUMOFHEADS = NUMOFLIBS * 2;
 let NUMOFMENTEES = 0;
 const NUMOFTEACHERS = NUMOFLIBS * 2;
+const NUMOFTEACHS = NUMOFLIBS * 2
 const NUMOFMENTORS = NUMOFLIBS * 2;
 
 const genders = ["Male", "Female", "Other"];
@@ -161,6 +162,438 @@ for (let index = 0; index < NUMOFMENTEES; index++) {
   data.mentee.push(fakeMentees);
 }
 
+
+//fake mentees to make date of birth possible, faker formats date of birth in a way to make it hard to search by date of birth. Commented out the code if future labs groups want to use it.
+
+
+
+  // const mentees = [
+  //  { id: 0,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 01/01/2010,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 1,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 01/10/2008,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 2,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 01/03/2004,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 3,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 03/01/2007,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 4,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 06/06/2006,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 5,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 05/05/2005,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 6,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 03/03/2010,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // { id: 7,
+  //   first_name: faker.name.firstName(),
+  //   last_name: faker.name.lastName(),
+  //   gender: genders[faker.random.number(genders.length - 1)],
+  //   email: faker.internet.email(),
+  //   primary_language: faker.random.arrayElement(LANGUAGES).name,
+  //   dob: 01/01/2014,
+  //   mentee_picture: faker.image.imageUrl(),
+  //   english_lvl: faker.random.number(10),
+  //   math_lvl: faker.random.number(13),
+  //   reading_lvl: faker.random.number(13),
+  //   school_lvl: faker.random.number(13),
+  //   academic_description: faker.random.words(20),
+  //   support_needed: faker.random.words(35),
+  //   availability: {
+  //     time_zone: faker.address.timeZone(),
+  //     as_early_as: faker.fake("{{random.number(24)}}:00"),
+  //     as_late_as: faker.fake("{{random.number(24)}}:00"),
+  //     methods: faker.random.arrayElements(apps, 3),
+  //   },
+  //   dynamic_questions: [
+  //     {
+  //       qId: 0,
+  //       question: "My favorite thing to do in my free time is",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 1,
+  //       question: "When I grow up, I want to be",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 2,
+  //       question: "Goals & Dreams Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 3,
+  //       question: "Personal Struggles Notes",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     {
+  //       qId: 4,
+  //       question: "Other interests/hobbies",
+  //       answer: faker.hacker.phrase(),
+  //     },
+  //     { qId: 5, question: "Skills Notes", answer: faker.hacker.phrase() },
+  //     { qId: 6, question: "Family Notes", answer: faker.hacker.phrase() },
+  //     { qId: 7, question: "Other Notes", answer: faker.hacker.phrase() },
+  //     { qId: 8, question: "Admin Notes", answer: faker.hacker.phrase() },
+  //   ],
+  // },
+  // ]
+  // data.mentees = mentees
+
+
+
+
+  
+
+
+
 //Teachers----
 data.teacher = [];
 for (let index = 0; index < NUMOFTEACHERS; index++) {
@@ -181,6 +614,28 @@ for (let index = 0; index < NUMOFTEACHERS; index++) {
     notes: faker.random.words(20),
   };
   data.teacher.push(fakeTeacher);
+}
+
+//public facing teachers that do not need auth
+data.teach = [];
+for (let index = 0; index < NUMOFTEACHS; index++) {
+  //Generate data
+  let fakeTeach = {
+    id: index,
+    first_name: faker.name.firstName(),
+    last_name: faker.name.lastName(),
+    gender: faker.random.arrayElement(genders),
+    address: faker.address.streetAddress(),
+    teachers_picture: faker.image.imageUrl(),
+    education_contact: {
+      name: faker.name.findName(),
+      phone: faker.phone.phoneNumberFormat(2),
+      email: faker.internet.email(),
+      jobTitle: faker.name.jobTitle(),
+    },
+    notes: faker.random.words(20),
+  };
+  data.teach.push(fakeTeach);
 }
 
 //mentor
