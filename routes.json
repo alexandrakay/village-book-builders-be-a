@@ -8,5 +8,6 @@
   "/teacher*" : "/teacher$1",
   "/program*" : "/program$1",
   "/mentee*" : "/mentee$1",
-  "/users*": "/664/users$1"
+  "/users*": "/664/users$1",
+  "/match*":"/match$1"
 }
