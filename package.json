@@ -1,7 +1,7 @@
 {
   "name": "mockdb",
   "version": "1.0.0",
-  "description": "Mock API Data for Labs 29 VBB",
+  "description": "Mock API Data for Labs VBB",
   "main": "index.js",
   "scripts": {
     "start": "json-server-auth db.json -r routes.json",
