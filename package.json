@@ -4,10 +4,9 @@
   "description": "Mock API Data for Labs 29 VBB",
   "main": "index.js",
   "scripts": {
-    "start": "npm run genData && node server.js",
+    "start": "json-server-auth db.json -r routes.json",
     "dev": "npm run genData && nodemon server.js",
     "genData": "node dataGenerator.js",
-    "oldStart": "json-server-relationship --watch db.json  --port 5000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "forever start server.js"
   },
@@ -16,12 +15,13 @@
   "dependencies": {
     "body-parser": "1.19.0",
     "faker": "5.1.0",
-    "json-server": "^0.16.3",
     "json-server-relationship": "0.14.5",
     "jsonfile": "6.1.0",
     "jsonwebtoken": "8.5.1"
   },
   "devDependencies": {
+    "json-server": "^0.16.3",
+    "json-server-auth": "^2.0.2",
     "nodemon": "2.0.7"
   }
 }
