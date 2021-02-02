@@ -9,8 +9,8 @@ https://vbb-mock-api.herokuapp.com/
 
 auth routes:
 
-https://vbb-mock-api.herokuapp.com/auth/login
-https://vbb-mock-api.herokuapp.com/auth/register
+https://vbb-mock-api.herokuapp.com/login
+https://vbb-mock-api.herokuapp.com/register
 
 
 All basic CRUD operations apply
@@ -27,6 +27,8 @@ headmaster -> https://vbb-mock-api.herokuapp.com/headmaster
 programs -> https://vbb-mock-api.herokuapp.com/program
 
 resources -> https://vbb-mock-api.herokuapp.com/resource
+
+matches -> https://vbb-mock-api.herokuapp.com/match
 
 
   
