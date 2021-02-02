@@ -110,13 +110,6 @@
       "password": "$2a$10$1QWhoHaAZeBjNfE9X5VxLO9W33fR5YEQ60qv7DbS3Y28WYaI1o8gK",
       "role": "headmaster",
       "id": 17
-    },
-    {
-      "email": "dude@jeff.com",
-      "password": "$2a$10$VWYLzBaOF7JGdfa3.HiZH.M0tIKoK45sqlUqLtg2buJoQrcmU.Idu",
-      "first_name": "Dude",
-      "last_name": "Jeff",
-      "id": 18
     }
   ],
   "teacher": [
@@ -419,37 +412,6 @@
         "jobTitle": "International Applications Manager"
       },
       "notes": "bandwidth Ergonomic Iceland Tasty well-modulated Steel Gorgeous Pre-emptive Data Carolina mobile Hawaii Somali Vatu Lithuanian well-modulated Total Mayotte loyalty Open-architected"
-    },
-    {
-      "first_name": "Adolph",
-      "last_name": "Hills",
-      "gender": "Female",
-      "address": "59364 Libby Freeway",
-      "teachers_picture": "http://placeimg.com/640/480",
-      "education_contact": {
-        "name": "Lorraine Weimann",
-        "phone": "1-803-396-7210",
-        "email": "Leonora_Sauer@gmail.com",
-        "jobTitle": "International Program Orchestrator"
-      },
-      "notes": "Practical Direct Granite archive TCP Rubber Manager Licensed state deposit Saudi Personal driver hub monitor info-mediaries Refined solid primary Credit",
-      "id": 20
-    },
-    {
-      "first_name": "Alf",
-      "last_name": "Hills",
-      "gender": "Female",
-      "address": "59364 Libby Freeway",
-      "teachers_picture": "http://placeimg.com/640/480",
-      "education_contact": {
-        "name": "Lorraine Weimann",
-        "phone": "1-803-396-7210",
-        "email": "Leonora_Sauer@gmail.com",
-        "password": "password",
-        "jobTitle": "International Program Orchestrator"
-      },
-      "notes": "Practical Direct Granite archive TCP Rubber Manager Licensed state deposit Saudi Personal driver hub monitor info-mediaries Refined solid primary Credit",
-      "id": 21
     }
   ],
   "headmaster": [

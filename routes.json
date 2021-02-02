@@ -1,13 +1,12 @@
 {
   "/api/*": "/$1",
-  "/admin/library": "/library",
-  "/admin/library/:id": "/library/:id",
-  "/headmaster/village": "/village",
-  "/headmaster/village/:id": "/village/:id",
-  "/headmaster/schools": "/schools",
-  "/headmaster/schools/:id": "/schools/:id",
-  "/student": "/students",
-  "/mentors": "/mentors",
-  "/teacher" : "/teacher",
-  "/program" : "/program"
+  "/library*": "/library$1",
+  "/headmaster*": "/headmaster$1",
+  "/village*": "/village$1",
+  "/schools*": "/schools$1",
+  "/mentor*": "/mentor$1",
+  "/teacher*" : "/teacher$1",
+  "/program*" : "/program$1",
+  "/mentee*" : "/mentee$1",
+  "/users*": "/664/users$1"
 }
