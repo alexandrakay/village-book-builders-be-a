@@ -19,7 +19,7 @@
     },
     {
       "id": 2,
-      "email": "bruno@email.com",
+      "email": "teacher@teacher.com",
       "password": "password",
       "role": "admin"
     },
