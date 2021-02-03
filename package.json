@@ -4,8 +4,8 @@
   "description": "Mock API Data for Labs VBB",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "json-server-auth db.json -r routes.json",
+    "dev": "node server.js",
+    "start": "json-server-auth db.json -r routes.json",
     "genData": "node dataGenerator.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "forever start server.js"
@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
+    "dotenv": "^8.2.0",
     "faker": "5.1.0",
     "json-server-relationship": "0.14.5",
     "jsonfile": "6.1.0",
