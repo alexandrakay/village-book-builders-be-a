@@ -10,6 +10,8 @@ server.use(auth)
 server.use(router)
 server.listen(3000)
 
+server.db = router.db
+//binding app to db
 
 
 server.use(router);
