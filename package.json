@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
-    "start": "json-server-auth db.json -r routes.json",
+    "start": "json-server-auth db.json -r routes.json server.js",
     "genData": "node dataGenerator.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "forever start server.js"
