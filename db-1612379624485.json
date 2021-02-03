@@ -465,11 +465,6 @@
       "email": "admin@admin.org",
       "password": "pass",
       "id": 22
-    },
-    {
-      "email": "admin@admin.org",
-      "password": "pass",
-      "id": 23
     }
   ],
   "headmaster": [
