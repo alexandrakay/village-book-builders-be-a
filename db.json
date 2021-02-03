@@ -117,6 +117,11 @@
       "first_name": "Dude",
       "last_name": "Jeff",
       "id": 18
+    },
+    {
+      "email": "teacher@tea.com",
+      "password": "$2a$10$r0Msdne1kGtCR1tsCiOH5.44e/dQ0G.AGn3WlKPgIG9OHWY.mPJ2W",
+      "id": 19
     }
   ],
   "teacher": [
@@ -567,29 +572,6 @@
       "villageId": 4,
       "schoolId": 4,
       "libraryId": 4
-    },
-    {
-      "id": 5,
-      "first_name": "Anastasia",
-      "last_name": "Dooley",
-      "gender": "Female",
-      "address": "928 Benedict Squares",
-      "gps_coordinates": [
-        "-32.9441",
-        "-121.0880"
-      ],
-      "images_drive_folder_link": "http://rebeca.org",
-      "headmasters_picture": "http://placeimg.com/640/480",
-      "education_contact": {
-        "name": "Mr. Walter Reichel",
-        "phone": "1-410-494-0491",
-        "email": "Gabriella.Gerhold10@hotmail.com",
-        "jobTitle": "Dynamic Integration Representative"
-      },
-      "notes": "Buckinghamshire Unbranded gold deliver white infrastructures hacking Pants Chair calculate context-sensitive invoice compress Steel Graphic Handcrafted Mobility payment feed Account Music calculate Nebraska Metical Gloves transmitting Nevada unleash Loan Ridge generating Monaco hierarchy harness Investor Steel Lari Towels Gourde revolutionary haptic connect array Granite Keyboard Grocery Concrete Stravenue Automotive 24",
-      "villageId": 5,
-      "schoolId": 5,
-      "libraryId": 5
     }
   ],
   "mentor": [
@@ -1378,77 +1360,6 @@
       ],
       "villageId": 4,
       "schoolId": 4
-    },
-    {
-      "id": 5,
-      "name": "Bailey - Yost",
-      "description": "XML Manager synergy Tactics SAS Washington Intelligent up Rubber program Home solid Ball Meadow Future primary models Keyboard Czech Wooden Table Infrastructure Comoros Public-key matrices redundant lavender Account Borders Assistant",
-      "library_usage": "FTP Kids Handcrafted calculate Checking Quality Optimization Automotive JSON toolset District extend Inlet Bedfordshire scalable deposit User-centric 1080p Quetzal CSS Diverse South Virginia Keyboard invoice Greece Ohio reinvent Fantastic Pound",
-      "notes": "Agent payment Account Incredible exuding IB virtual ROI cross-platform HDD Dollar) Verde foreground moderator Cotton Botswana Gloves Finland Gorgeous integrated Principal repurpose Zambia teal deposit Beauty transmitting Buckinghamshire Borders Berkshire",
-      "image": "http://placeimg.com/600/600",
-      "headmasterId": [
-        5,
-        17
-      ],
-      "villageId": 5,
-      "schoolId": 5
-    },
-    {
-      "id": 6,
-      "name": "McClure - Hodkiewicz",
-      "description": "Small BEAC Savings Dakota Kentucky deposit Maldives Investment SDD Sleek Gloves invoice generate Customer Colorado Generic encoding Steel alarm Investment Berkshire Mozambique Exclusive Frozen silver Loan Uruguay JBOD Soft Rubber",
-      "library_usage": "Wyoming tan bricks-and-clicks Quality Accountability fuchsia Account program Mauritius local navigating Kitts Lead array hardware Dollar Multi-layered Small Designer Division Internal Rustic Parkway Sweden quantify Handcrafted Sausages Producer Colombia Computer",
-      "notes": "Fiji Intelligent Granite Soft calculating workforce Australia payment schemas Interactions Bike Steel Garden Rupiah indexing generating 1080p Credit synergies withdrawal Chair payment Clothing Berkshire Village Metal GB Direct Chips Fresh",
-      "image": "http://placeimg.com/600/600",
-      "headmasterId": [
-        6
-      ],
-      "villageId": 6,
-      "schoolId": 6
-    },
-    {
-      "id": 7,
-      "name": "Wiegand - Dooley",
-      "description": "Granite Persistent Utah Liaison cyan neural firewall Tactics Music implement architecture Maine wireless payment Bedfordshire Group Korean Consultant orange Prairie Intelligent 24/7 Distributed Delaware back Cambridgeshire Route projection Loan feed",
-      "library_usage": "copying Pants infrastructures Baby Bedfordshire Inlet Indiana Human capacity primary Upgradable Plastic hack HDD holistic model Self-enabling program Guadeloupe withdrawal Tools Electronics incubate Loan Strategist e-commerce circuit Bacon generate efficient",
-      "notes": "bus TCP focus emulation Bedfordshire e-business Liechtenstein Unbranded infomediaries Maine robust initiatives quantify Berkshire 1080p Inlet Dynamic Supervisor Ball parsing Graphical Jamaica parsing Accountability cross-media blockchains Hampshire Loan invoice tan",
-      "image": "http://placeimg.com/600/600",
-      "headmasterId": [
-        7,
-        19
-      ],
-      "villageId": 7,
-      "schoolId": 7
-    },
-    {
-      "id": 8,
-      "name": "Walsh - Casper",
-      "description": "bandwidth motivating Outdoors Accounts Global Nuevo array Music Litas Credit Mandatory violet Unit deposit Soft syndicate Grove Egyptian invoice payment Algerian hard Oklahoma District Boliviano payment Philippine application Borders infomediaries",
-      "library_usage": "navigate navigating Refined generating Computer Future Tuna responsive Convertible generate Illinois Tools Organic PNG invoice Awesome mobile Groves Fantastic open-source Hawaii strategy Senior Chicken Som Assimilated IB feed structure Taka",
-      "notes": "Reverse-engineered intuitive contextually-based Ergonomic web-enabled application engage Fantastic azure enable Mobility Solutions lavender Croatia contextually-based clicks-and-mortar matrix USB Ergonomic SCSI Investor digital hard withdrawal Guinea New Spring Chicken Marketing mobile",
-      "image": "http://placeimg.com/600/600",
-      "headmasterId": [
-        8,
-        13,
-        18
-      ],
-      "villageId": 8,
-      "schoolId": 8
-    },
-    {
-      "id": 9,
-      "name": "Ferry - Langworth",
-      "description": "Internal National Program panel Concrete Maldives deposit Steel Borders Refined navigating Pines Falls Borders Personal paradigms payment Account Awesome RSS Centralized Gardens Netherlands deposit Account dynamic Seamless Cambridgeshire Fish transmitting",
-      "library_usage": "Nevada parsing ubiquitous 4th sticky deposit Ball Open-source Applications networks Toys Chile Cedi area quantify eyeballs Way Gold Music Multi-lateral bluetooth channels Engineer Polarised Corporate Music SCSI TCP Public-key Union",
-      "notes": "Accountability Coordinator withdrawal Cliff SAS SMS functionalities Incredible Soft Devolved intermediate Loan Buckinghamshire Cotton user-centric Operative Tactics gold productize Rial Steel morph Granite Concrete Investment architectures Cape monetize Front-line responsive",
-      "image": "http://placeimg.com/600/600",
-      "headmasterId": [
-        9,
-        12,
-        16
-      ],
-      "villageId": 9,
-      "schoolId": 9
     }
   ],
   "village": [
@@ -1535,92 +1446,6 @@
       ],
       "schoolId": 4,
       "libraryId": 4
-    },
-    {
-      "id": 5,
-      "name": "Lake Freddyborough",
-      "GPS_coordinates": [
-        "76.7628",
-        "78.4733"
-      ],
-      "village_contact_name": "Pablo Robel",
-      "village_contact_phone": "363-216-9297",
-      "notes": "Tennessee Beauty global Rufiyaa Handmade Cote Wooden tan channels Buckinghamshire XSS Georgia Bacon Bedfordshire Chair reinvent calculating Handcrafted Virginia tan Chicken 24/7 Manager invoice Palau e-markets calculating platforms hacking bypassing Handmade Handcrafted synergistic synergistic cross-platform quantify national Crossing withdrawal wireless transmitting Tuna Music Cambridgeshire navigate Bridge Liaison payment navigate Dynamic",
-      "headmasterId": [
-        5,
-        17
-      ],
-      "schoolId": 5,
-      "libraryId": 5
-    },
-    {
-      "id": 6,
-      "name": "Nienowtown",
-      "GPS_coordinates": [
-        "33.4040",
-        "-24.5682"
-      ],
-      "village_contact_name": "Luke Bode V",
-      "village_contact_phone": "546-745-1289",
-      "notes": "yellow Internal Cheese Metal protocol redundant Account Ameliorated Streamlined override global Business-focused Home bypass Refined Fresh Metal users Moroccan Montserrat Berkshire Wooden back-end withdrawal FTP bandwidth-monitored synthesizing Customizable algorithm connecting Euro next-generation Village Personal generating Parkways Swaziland synthesizing indigo Consultant French Strategist object-oriented state deposit Concrete frame Supervisor Facilitator Upgradable",
-      "headmasterId": [
-        6
-      ],
-      "schoolId": 6,
-      "libraryId": 6
-    },
-    {
-      "id": 7,
-      "name": "Lynchside",
-      "GPS_coordinates": [
-        "86.8663",
-        "-56.2967"
-      ],
-      "village_contact_name": "Jerry Larson",
-      "village_contact_phone": "306-542-4156",
-      "notes": "Mission copying full-range intermediate dynamic systematic Polynesia Generic Practical Togo groupware circuit withdrawal Concrete definition invoice Centralized Distributed Berkshire Officer transmitter Tugrik Garden support virtual pixel holistic indexing input Infrastructure Chips Practical Electronics compress Cotton withdrawal scalable Persevering state Chicken Cedi Refined COM Card Home tolerance auxiliary Market Iowa Plastic",
-      "headmasterId": [
-        7,
-        19
-      ],
-      "schoolId": 7,
-      "libraryId": 7
-    },
-    {
-      "id": 8,
-      "name": "North Garrett",
-      "GPS_coordinates": [
-        "-15.6833",
-        "-88.4104"
-      ],
-      "village_contact_name": "Mrs. Lester Herman",
-      "village_contact_phone": "883-885-8020",
-      "notes": "Adaptive hierarchy Exclusive Generic Berkshire Leu Cotton Data Direct card Operations Credit Generic Missouri primary reintermediate sticky Gloves Taka web calculating 9(E.U.A.-9) generation Extended Singapore success Mexican Shoes relationships Product Investment Delaware didactic multi-byte Small Account blue throughput Accountability Account Senior out-of-the-box Louisiana payment Research superstructure PCI open-source Plaza Research",
-      "headmasterId": [
-        8,
-        13,
-        18
-      ],
-      "schoolId": 8,
-      "libraryId": 8
-    },
-    {
-      "id": 9,
-      "name": "Ozellaview",
-      "GPS_coordinates": [
-        "-15.4695",
-        "-104.4890"
-      ],
-      "village_contact_name": "Gene Roob",
-      "village_contact_phone": "206-436-0241",
-      "notes": "Account Intranet capability Faso Tools Wooden tan Checking Junctions lavender Markets integrate Course Fresh Implementation function Personal Knoll Tactics world-class even-keeled Global brand open-source Berkshire Nepal transmit reciprocal invoice Sausages Stream syndicate North Incredible Human Colorado Berkshire Chair Pizza Pakistan Team-oriented integrate Buckinghamshire calculate Salad Avon SAS withdrawal focus payment",
-      "headmasterId": [
-        9,
-        12,
-        16
-      ],
-      "schoolId": 9,
-      "libraryId": 9
     }
   ],
   "match": [
