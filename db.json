@@ -122,6 +122,11 @@
       "email": "teacher@tea.com",
       "password": "$2a$10$r0Msdne1kGtCR1tsCiOH5.44e/dQ0G.AGn3WlKPgIG9OHWY.mPJ2W",
       "id": 19
+    },
+    {
+      "email": "admin@admin.org",
+      "password": "$2a$10$ckYiDpJZIHqIL9G0GmueTeKpDD/vDDUytzeyOH9lKABStxk6Up6xq",
+      "id": 20
     }
   ],
   "teacher": [
@@ -455,6 +460,11 @@
       },
       "notes": "Practical Direct Granite archive TCP Rubber Manager Licensed state deposit Saudi Personal driver hub monitor info-mediaries Refined solid primary Credit",
       "id": 21
+    },
+    {
+      "email": "admin@admin.org",
+      "password": "pass",
+      "id": 22
     }
   ],
   "headmaster": [

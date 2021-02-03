@@ -1,5 +1,5 @@
 {
-  "/api/*": "/$1",
+  "/664/api/*": "/$1",
   "/library*": "/library$1",
   "/headmaster*": "/headmaster$1",
   "/village*": "/village$1",

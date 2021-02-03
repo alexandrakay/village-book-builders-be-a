@@ -14,7 +14,7 @@ app.db = router.db
 //binding app to db
 
 
-app.use(router);
+
 
 
 
