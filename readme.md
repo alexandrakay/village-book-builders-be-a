@@ -15,20 +15,21 @@ https://vbb-mock-api.herokuapp.com/register
 
 All basic CRUD operations apply
 
+ BACkend is deployed and working.
+ 
+baseUrl="https://myversionvbb.herokuapp.com/api"
 
-students|mentees -> https://vbb-mock-api.herokuapp.com/mentee
+register --> https://myversionvbb.herokuapp.com/login
 
-teachers -> https://vbb-mock-api.herokuapp.com/teacher
+login --> https://myversionvbb.herokuapp.com/register
 
-mentors -> https://vbb-mock-api.herokuapp.com/mentor
-
-headmaster -> https://vbb-mock-api.herokuapp.com/headmaster
-
-programs -> https://vbb-mock-api.herokuapp.com/program
-
-resources -> https://vbb-mock-api.herokuapp.com/resource
-
-matches -> https://vbb-mock-api.herokuapp.com/match
+matching --> '/match'
+mentees --> '/mentee'
+resource --> '/resource'
+program --> '/program'
+headmaster --> '/headmaster'
+teacher --> '/teacher'
+village --> '/village'
 
 
   
